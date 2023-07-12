@@ -27,7 +27,6 @@ class ViewController: UIViewController {
         checklistView.delegate = self
         checklistView.dataSource = self
         view.addSubview(checklistView)
-        checklistView.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
     }
 
 }
@@ -42,7 +41,11 @@ extension ViewController: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell")
+        var cell = tableView.dequeueReusableCell(withIdentifier: "cell")
+        if cell == nil {
+            cell = UITableViewCell.init(style: .default, reuseIdentifier: "cell")
+            cell?.accessoryType = .disclosureIndicator
+        }
         let bird = birds[indexPath.row]
         cell?.textLabel?.text = bird.commonName
         cell?.imageView?.image = bird.photo
@@ -51,7 +54,9 @@ extension ViewController: UITableViewDataSource {
 }
 
 extension ViewController: UITableViewDelegate {
-    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+    }
 }
 
 
