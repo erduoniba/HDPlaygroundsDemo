@@ -21,17 +21,3 @@ struct Bird {
     let photo: UIImage?
     let family: Family
 }
-
-
-
-extension Bird: CustomStringConvertible {
-    public var description: String {
-        return "\(commonName) (\(scientificName))"
-    }
-}
-
-extension Bird: CustomPlaygroundDisplayConvertible {
-    public var playgroundDescription: Any {
-        return photo as Any
-    }
-}

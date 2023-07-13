@@ -32,19 +32,9 @@ class BirdProvider {
     }
 }
 
-
-
 var birdsToShow: [Bird] {
     let birdProvider = BirdProvider(region: .northAmerica)
     let birdsToFind = birdProvider.birds.filter { $0.photo == nil }
     let owlsToFind = birdsToFind.filter { $0.family == .owls }
     return owlsToFind
 }
-
-
-//let checklist = ChecklistView()
-//for bird in owlsToFind {
-//    checklist.add(bird)
-//}
-
-
