@@ -9,20 +9,37 @@
     </dependencies>
     <scenes>
         <!--Checklist-->
-        <scene sceneID="4gR-gQ-P22">
+        <scene sceneID="CdT-sQ-qhn">
             <objects>
-                <viewController id="MOU-DX-jyu" customClass="ViewController" customModule="HDPlaygroundsDemo" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="3fz-CI-5gn">
+                <navigationController id="S0j-vs-GRU" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Checklist" image="checklist" catalog="system" id="MVs-0L-lvC"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="3ZM-xx-qwR">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="sUl-ab-WDA" kind="relationship" relationship="rootViewController" id="2Ci-cP-Ag3"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wk2-EE-4Ih" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="970" y="270"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="TD4-xV-gfA">
+            <objects>
+                <viewController id="sUl-ab-WDA" customClass="ViewController" customModule="HDPlaygroundsDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="jsY-6c-gWn">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="y2z-cH-QCP"/>
+                        <viewLayoutGuide key="safeArea" id="mNw-pG-mVD"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Checklist" image="checklist" catalog="system" id="6s0-Vi-ySm"/>
+                    <navigationItem key="navigationItem" id="XPO-vf-Cj9"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="q6U-9K-aBt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pGm-GR-Hfj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="789" y="262"/>
+            <point key="canvasLocation" x="1851" y="279"/>
         </scene>
         <!--Birds-->
         <scene sceneID="cEn-kQ-pmu">
@@ -51,7 +68,7 @@
                     </tabBar>
                     <connections>
                         <segue destination="WH3-ka-Fvq" kind="relationship" relationship="viewControllers" id="AZn-i5-rms"/>
-                        <segue destination="MOU-DX-jyu" kind="relationship" relationship="viewControllers" id="U7H-9g-TBA"/>
+                        <segue destination="S0j-vs-GRU" kind="relationship" relationship="viewControllers" id="oRi-4r-xYk"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nWX-Gm-t8v" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

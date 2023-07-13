@@ -14,6 +14,10 @@
 		D90F0B582A5EC0590016F905 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D90F0B572A5EC0590016F905 /* Assets.xcassets */; };
 		D90F0B5B2A5EC0590016F905 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D90F0B592A5EC0590016F905 /* LaunchScreen.storyboard */; };
 		D90F0B632A5EC07C0016F905 /* BirdProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = D90F0B622A5EC07C0016F905 /* BirdProvider.swift */; };
+		D90F0B682A5F99E70016F905 /* Bird.swift in Sources */ = {isa = PBXBuildFile; fileRef = D90F0B672A5F99E70016F905 /* Bird.swift */; };
+		D90F0B6B2A5FA2180016F905 /* ChecklistView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D90F0B6A2A5FA2180016F905 /* ChecklistView.swift */; };
+		D90F0B6D2A5FA4230016F905 /* SightingMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D90F0B6C2A5FA4230016F905 /* SightingMapView.swift */; };
+		D97AEF422A5FCB88005BCC34 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D97AEF412A5FCB88005BCC34 /* MapViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +30,11 @@
 		D90F0B5A2A5EC0590016F905 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D90F0B5C2A5EC0590016F905 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D90F0B622A5EC07C0016F905 /* BirdProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BirdProvider.swift; sourceTree = "<group>"; };
+		D90F0B652A5ED3BE0016F905 /* MyPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyPlayground.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		D90F0B672A5F99E70016F905 /* Bird.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bird.swift; sourceTree = "<group>"; };
+		D90F0B6A2A5FA2180016F905 /* ChecklistView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChecklistView.swift; sourceTree = "<group>"; };
+		D90F0B6C2A5FA4230016F905 /* SightingMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SightingMapView.swift; sourceTree = "<group>"; };
+		D97AEF412A5FCB88005BCC34 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,16 +67,45 @@
 		D90F0B4D2A5EC0540016F905 /* HDPlaygroundsDemo */ = {
 			isa = PBXGroup;
 			children = (
+				D90F0B692A5FA1FE0016F905 /* ChecklistView */,
+				D90F0B662A5F99D20016F905 /* Birds */,
 				D90F0B4E2A5EC0540016F905 /* AppDelegate.swift */,
 				D90F0B502A5EC0540016F905 /* SceneDelegate.swift */,
 				D90F0B522A5EC0540016F905 /* ViewController.swift */,
+				D97AEF412A5FCB88005BCC34 /* MapViewController.swift */,
 				D90F0B542A5EC0540016F905 /* Main.storyboard */,
 				D90F0B572A5EC0590016F905 /* Assets.xcassets */,
 				D90F0B592A5EC0590016F905 /* LaunchScreen.storyboard */,
 				D90F0B5C2A5EC0590016F905 /* Info.plist */,
-				D90F0B622A5EC07C0016F905 /* BirdProvider.swift */,
+				D90F0B642A5ED39F0016F905 /* Playgrounds */,
 			);
 			path = HDPlaygroundsDemo;
+			sourceTree = "<group>";
+		};
+		D90F0B642A5ED39F0016F905 /* Playgrounds */ = {
+			isa = PBXGroup;
+			children = (
+				D90F0B652A5ED3BE0016F905 /* MyPlayground.playground */,
+			);
+			path = Playgrounds;
+			sourceTree = "<group>";
+		};
+		D90F0B662A5F99D20016F905 /* Birds */ = {
+			isa = PBXGroup;
+			children = (
+				D90F0B622A5EC07C0016F905 /* BirdProvider.swift */,
+				D90F0B672A5F99E70016F905 /* Bird.swift */,
+			);
+			path = Birds;
+			sourceTree = "<group>";
+		};
+		D90F0B692A5FA1FE0016F905 /* ChecklistView */ = {
+			isa = PBXGroup;
+			children = (
+				D90F0B6A2A5FA2180016F905 /* ChecklistView.swift */,
+				D90F0B6C2A5FA4230016F905 /* SightingMapView.swift */,
+			);
+			path = ChecklistView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -142,9 +180,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				D90F0B532A5EC0540016F905 /* ViewController.swift in Sources */,
+				D90F0B682A5F99E70016F905 /* Bird.swift in Sources */,
 				D90F0B632A5EC07C0016F905 /* BirdProvider.swift in Sources */,
+				D90F0B6D2A5FA4230016F905 /* SightingMapView.swift in Sources */,
 				D90F0B4F2A5EC0540016F905 /* AppDelegate.swift in Sources */,
 				D90F0B512A5EC0540016F905 /* SceneDelegate.swift in Sources */,
+				D90F0B6B2A5FA2180016F905 /* ChecklistView.swift in Sources */,
+				D97AEF422A5FCB88005BCC34 /* MapViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
