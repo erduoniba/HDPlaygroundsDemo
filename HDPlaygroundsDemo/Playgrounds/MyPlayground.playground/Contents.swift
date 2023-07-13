@@ -20,7 +20,7 @@ if let bird = owlsToFind.first {
     
     if let mostRecentSighting = sightings.first {
         let sightingMapView = SightingMapView(sighting: mostRecentSighting)
-        sightingMapView.frame = CGRect(x: 0, y: 0, width: 400, height: 600)
+        sightingMapView.frame = CGRect(x: 0, y: 100, width: 600, height: 600)
         PlaygroundPage.current.liveView = sightingMapView
     }
 }

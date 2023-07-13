@@ -30,6 +30,15 @@ func sightingToShow(for bird: Bird) -> Sighting? {
 }
 
 
+class HDAnnotation: NSObject, MKAnnotation {
+    var coordinate: CLLocationCoordinate2D
+    var title: String?
+    
+    init(coordinate: CLLocationCoordinate2D) {
+        self.coordinate = coordinate
+    }
+}
+
 class SightingMapView: MKMapView {
     let sighting: Sighting
     
@@ -38,6 +47,13 @@ class SightingMapView: MKMapView {
         super.init(frame: .zero)
         
         self.centerCoordinate = sighting.location
+        let annotation = HDAnnotation(coordinate: sighting.location)
+        annotation.title = "Apple Park"
+        self.addAnnotation(annotation)
+        
+        let span = MKCoordinateSpan(latitudeDelta: 0.1, longitudeDelta: 0.1)
+        let region = MKCoordinateRegion(center: sighting.location, span: span)
+        self.setRegion(region, animated: true)
     }
     
     required init?(coder: NSCoder) {
