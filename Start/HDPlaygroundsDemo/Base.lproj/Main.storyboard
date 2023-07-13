@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22138.1" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="rj2-Gf-rOI">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22113"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Checklist-->
+        <scene sceneID="CdT-sQ-qhn">
+            <objects>
+                <navigationController id="S0j-vs-GRU" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Checklist" image="checklist" catalog="system" id="MVs-0L-lvC"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="3ZM-xx-qwR">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="sUl-ab-WDA" kind="relationship" relationship="rootViewController" id="2Ci-cP-Ag3"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wk2-EE-4Ih" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="970" y="270"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="TD4-xV-gfA">
+            <objects>
+                <viewController id="sUl-ab-WDA" customClass="ViewController" customModule="HDPlaygroundsDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="jsY-6c-gWn">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="mNw-pG-mVD"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="XPO-vf-Cj9"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pGm-GR-Hfj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1851" y="279"/>
+        </scene>
+        <!--Birds-->
+        <scene sceneID="cEn-kQ-pmu">
+            <objects>
+                <viewController id="WH3-ka-Fvq" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="i5Q-CU-OSR">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="8Ah-le-XCT"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Birds" image="bird" catalog="system" id="jx4-Xd-7y2"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aeG-tS-HhW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="790" y="-413"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="JNL-jI-2RC">
+            <objects>
+                <tabBarController id="rj2-Gf-rOI" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="cp0-rC-l5b">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="WH3-ka-Fvq" kind="relationship" relationship="viewControllers" id="AZn-i5-rms"/>
+                        <segue destination="S0j-vs-GRU" kind="relationship" relationship="viewControllers" id="oRi-4r-xYk"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nWX-Gm-t8v" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-87" y="-93"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="bird" catalog="system" width="126" height="128"/>
+        <image name="checklist" catalog="system" width="128" height="107"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

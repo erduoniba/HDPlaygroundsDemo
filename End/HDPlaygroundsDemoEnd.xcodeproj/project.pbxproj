@@ -21,7 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		D90F0B4B2A5EC0540016F905 /* HDPlaygroundsDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HDPlaygroundsDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D90F0B4B2A5EC0540016F905 /* HDPlaygroundsDemoEnd.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HDPlaygroundsDemoEnd.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D90F0B4E2A5EC0540016F905 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D90F0B502A5EC0540016F905 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		D90F0B522A5EC0540016F905 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -59,7 +59,7 @@
 		D90F0B4C2A5EC0540016F905 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				D90F0B4B2A5EC0540016F905 /* HDPlaygroundsDemo.app */,
+				D90F0B4B2A5EC0540016F905 /* HDPlaygroundsDemoEnd.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -111,9 +111,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		D90F0B4A2A5EC0540016F905 /* HDPlaygroundsDemo */ = {
+		D90F0B4A2A5EC0540016F905 /* HDPlaygroundsDemoEnd */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D90F0B5F2A5EC0590016F905 /* Build configuration list for PBXNativeTarget "HDPlaygroundsDemo" */;
+			buildConfigurationList = D90F0B5F2A5EC0590016F905 /* Build configuration list for PBXNativeTarget "HDPlaygroundsDemoEnd" */;
 			buildPhases = (
 				D90F0B472A5EC0540016F905 /* Sources */,
 				D90F0B482A5EC0540016F905 /* Frameworks */,
@@ -123,9 +123,9 @@
 			);
 			dependencies = (
 			);
-			name = HDPlaygroundsDemo;
+			name = HDPlaygroundsDemoEnd;
 			productName = HDPlaygroundsDemo;
-			productReference = D90F0B4B2A5EC0540016F905 /* HDPlaygroundsDemo.app */;
+			productReference = D90F0B4B2A5EC0540016F905 /* HDPlaygroundsDemoEnd.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -143,7 +143,7 @@
 					};
 				};
 			};
-			buildConfigurationList = D90F0B462A5EC0540016F905 /* Build configuration list for PBXProject "HDPlaygroundsDemo" */;
+			buildConfigurationList = D90F0B462A5EC0540016F905 /* Build configuration list for PBXProject "HDPlaygroundsDemoEnd" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -156,7 +156,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				D90F0B4A2A5EC0540016F905 /* HDPlaygroundsDemo */,
+				D90F0B4A2A5EC0540016F905 /* HDPlaygroundsDemoEnd */,
 			);
 		};
 /* End PBXProject section */
@@ -388,7 +388,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		D90F0B462A5EC0540016F905 /* Build configuration list for PBXProject "HDPlaygroundsDemo" */ = {
+		D90F0B462A5EC0540016F905 /* Build configuration list for PBXProject "HDPlaygroundsDemoEnd" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D90F0B5D2A5EC0590016F905 /* Debug */,
@@ -397,7 +397,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D90F0B5F2A5EC0590016F905 /* Build configuration list for PBXNativeTarget "HDPlaygroundsDemo" */ = {
+		D90F0B5F2A5EC0590016F905 /* Build configuration list for PBXNativeTarget "HDPlaygroundsDemoEnd" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D90F0B602A5EC0590016F905 /* Debug */,
