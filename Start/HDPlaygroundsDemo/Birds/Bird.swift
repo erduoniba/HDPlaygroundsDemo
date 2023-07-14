@@ -21,3 +21,16 @@ struct Bird {
     let photo: UIImage?
     let family: Family
 }
+
+// 使得在 Playground 中展示Bird对象有如下的描述
+extension Bird: CustomStringConvertible {
+    public var description: String {
+        return "\(commonName) (\(scientificName))"
+    }
+}
+
+extension Bird: CustomPlaygroundDisplayConvertible {
+    public var playgroundDescription: Any {
+        return photo as Any
+    }
+}

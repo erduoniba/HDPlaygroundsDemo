@@ -33,6 +33,7 @@
 		D90F0B672A5F99E70016F905 /* Bird.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bird.swift; sourceTree = "<group>"; };
 		D90F0B6A2A5FA2180016F905 /* ChecklistView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChecklistView.swift; sourceTree = "<group>"; };
 		D90F0B6C2A5FA4230016F905 /* SightingMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SightingMapView.swift; sourceTree = "<group>"; };
+		D97315FF2A5FF4B7000592B8 /* MyPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyPlayground.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		D97AEF412A5FCB88005BCC34 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -76,6 +77,7 @@
 				D90F0B572A5EC0590016F905 /* Assets.xcassets */,
 				D90F0B592A5EC0590016F905 /* LaunchScreen.storyboard */,
 				D90F0B5C2A5EC0590016F905 /* Info.plist */,
+				D97315FF2A5FF4B7000592B8 /* MyPlayground.playground */,
 			);
 			path = HDPlaygroundsDemo;
 			sourceTree = "<group>";
