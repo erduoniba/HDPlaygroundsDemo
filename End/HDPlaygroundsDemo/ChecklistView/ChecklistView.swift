@@ -11,7 +11,7 @@ import CoreLocation
 class ChecklistView: UITableView {
     weak var viewController: ViewController?
     
-    var birdsToShow: [Bird] {
+    @objc static var birdsToShow: [Bird] {
         let birdProvider = BirdProvider(region: .northAmerica)
         let birdsToFind = birdProvider.birds.filter { $0.photo != nil }
         let owlsToFind = birdsToFind.filter { $0.family == .owls }
@@ -22,7 +22,7 @@ class ChecklistView: UITableView {
     override init(frame: CGRect, style: UITableView.Style) {
         super.init(frame: frame, style: style)
         
-        birds = birdsToShow
+        birds = ChecklistView.birdsToShow
         self.delegate = self
         self.dataSource = self
     }

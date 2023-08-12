@@ -12,6 +12,11 @@ for bird in owlsToFind {
     checklist.add(bird)
 }
 
+let checklistOC = HDChecklistView(frame: CGRect(x: 0, y: 0, width: 300, height: 600))
+for bird in owlsToFind {
+    checklistOC.add(bird)
+}
+
 if let bird = owlsToFind.first {
     let appleparkLocation = CLLocationCoordinate2D(latitude: 37.3348655, longitude: -122.0089409)
 

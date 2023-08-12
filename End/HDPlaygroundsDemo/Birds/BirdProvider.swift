@@ -21,7 +21,7 @@ class BirdProvider {
     init(region: Region) {
         self.region = region
         
-        for _ in 0..<15 {
+        for _ in 0..<20 {
             let random = arc4random() % 1000
             let brandom = random % 2 == 0
             let brandom2 = random % 3 == 0

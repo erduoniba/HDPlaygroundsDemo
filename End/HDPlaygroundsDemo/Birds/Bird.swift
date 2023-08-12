@@ -8,24 +8,32 @@
 import Foundation
 import UIKit
 
-struct Bird {
+@objc class Bird: NSObject {
     enum Family {
         case owls
         case crow
     }
     
-    let commonName: String
-    let scientificName: String
-    let speciesCode: String
+    @objc var commonName: String = ""
+    var scientificName: String = ""
+    var speciesCode: String = ""
     
-    let photo: UIImage?
-    let family: Family
+    @objc var photo: UIImage? = nil
+    var family: Family? = nil
+    
+    init(commonName: String, scientificName: String, speciesCode: String, photo: UIImage?, family: Family?) {
+        self.commonName = commonName
+        self.scientificName = scientificName
+        self.speciesCode = speciesCode
+        self.photo = photo
+        self.family = family
+    }
 }
 
 
 
-extension Bird: CustomStringConvertible {
-    public var description: String {
+extension Bird {
+    public override var description: String {
         return "\(commonName) (\(scientificName))"
     }
 }

@@ -18,6 +18,7 @@
 		D90F0B6B2A5FA2180016F905 /* ChecklistView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D90F0B6A2A5FA2180016F905 /* ChecklistView.swift */; };
 		D90F0B6D2A5FA4230016F905 /* SightingMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D90F0B6C2A5FA4230016F905 /* SightingMapView.swift */; };
 		D97AEF422A5FCB88005BCC34 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D97AEF412A5FCB88005BCC34 /* MapViewController.swift */; };
+		D9A6755D2A87312D003DBE5B /* HDChecklistView.m in Sources */ = {isa = PBXBuildFile; fileRef = D9A6755C2A87312D003DBE5B /* HDChecklistView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,9 @@
 		D90F0B6A2A5FA2180016F905 /* ChecklistView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChecklistView.swift; sourceTree = "<group>"; };
 		D90F0B6C2A5FA4230016F905 /* SightingMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SightingMapView.swift; sourceTree = "<group>"; };
 		D97AEF412A5FCB88005BCC34 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		D9A6755A2A87312D003DBE5B /* HDPlaygroundsDemoEnd-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HDPlaygroundsDemoEnd-Bridging-Header.h"; sourceTree = "<group>"; };
+		D9A6755B2A87312D003DBE5B /* HDChecklistView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HDChecklistView.h; sourceTree = "<group>"; };
+		D9A6755C2A87312D003DBE5B /* HDChecklistView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HDChecklistView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +108,9 @@
 			children = (
 				D90F0B6A2A5FA2180016F905 /* ChecklistView.swift */,
 				D90F0B6C2A5FA4230016F905 /* SightingMapView.swift */,
+				D9A6755B2A87312D003DBE5B /* HDChecklistView.h */,
+				D9A6755C2A87312D003DBE5B /* HDChecklistView.m */,
+				D9A6755A2A87312D003DBE5B /* HDPlaygroundsDemoEnd-Bridging-Header.h */,
 			);
 			path = ChecklistView;
 			sourceTree = "<group>";
@@ -140,6 +147,7 @@
 				TargetAttributes = {
 					D90F0B4A2A5EC0540016F905 = {
 						CreatedOnToolsVersion = 15.0;
+						LastSwiftMigration = 1500;
 					};
 				};
 			};
@@ -180,6 +188,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D90F0B532A5EC0540016F905 /* ViewController.swift in Sources */,
+				D9A6755D2A87312D003DBE5B /* HDChecklistView.m in Sources */,
 				D90F0B682A5F99E70016F905 /* Bird.swift in Sources */,
 				D90F0B632A5EC07C0016F905 /* BirdProvider.swift in Sources */,
 				D90F0B6D2A5FA4230016F905 /* SightingMapView.swift in Sources */,
@@ -336,6 +345,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -353,6 +363,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.harry.HDPlaygroundsDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "HDPlaygroundsDemo/ChecklistView/HDPlaygroundsDemoEnd-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -363,6 +375,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -380,6 +393,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.harry.HDPlaygroundsDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "HDPlaygroundsDemo/ChecklistView/HDPlaygroundsDemoEnd-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

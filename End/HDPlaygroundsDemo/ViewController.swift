@@ -12,7 +12,8 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
-        let checklistView = ChecklistView()
+        let checklistView = HDChecklistView()
+//        let checklistView = ChecklistView()
         checklistView.viewController = self
         checklistView.frame = self.view.bounds
         view.addSubview(checklistView)
